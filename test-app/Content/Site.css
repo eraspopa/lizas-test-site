@@ -1,0 +1,208 @@
+﻿
+@font-face
+     {
+        font-family: JosefinSlab-Regular; 
+        src: url("../fonts/JosefinSlab-Regular.ttf"); 
+     }
+body {
+    font-family: JosefinSlab-Regular;
+    background-color: #ddd;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .site {
+    background-color: white;
+    max-width: 1900px;
+    margin: auto;
+    overflow: hidden;
+    font-family: JosefinSlab-Regular;
+  }
+  
+  /* =Elements
+  ---------------------------*/
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 26px;
+  }
+  p {
+        margin: 35px 0;
+        font-size: 20px;
+  }
+ 
+  /* =Header
+  ---------------------------*/
+  .site-header {
+    
+    padding: 0;
+    margin-top: -20px; 
+
+    text-align: center;
+    width: 100%;
+   
+  }
+  .site-title {
+    margin: 0;
+  }
+  @media (min-width: 800px) {
+    .site-title {
+      float: left;
+    }
+    
+  }
+  
+  /* =Navigation
+  ---------------------------*/
+  .site-navigation{ width:100%; position: fixed; z-index: 1000;background-color: black;}
+  .site-navigation ul {
+    margin-right: 30px;
+    
+    list-style-type: none;
+    
+    padding: 0;
+    background-color: #333;
+  }
+  .site-navigation li {
+    float: right;
+    padding: 5px 10px;
+    height: 40px;
+  }
+  .site-navigation a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  .site-navigation a:hover {
+    color: grey;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 800px) {
+    .site-navigation {
+      float: right;
+    }
+    .site-navigation a {
+      padding: 0 0 0 20px;
+    } 
+  }
+  
+  /* =Content
+  ---------------------------*/
+  .content-wrapper {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  /* =Footer
+  ---------------------------*/
+  .site-footer {
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    padding: 40px;
+  }
+  
+  @media (min-width: 800px) {
+    .site-footer {
+      clear: both;
+
+    }
+    .site-footer .column {
+      width: 50%;
+      margin-bottom: auto;
+    }
+    
+  }
+  
+  /* Crafted with love at Sparkbox */
+
+
+    .parallax {
+        width:100%;
+        height: 450px; 
+       padding: 0;
+        background-image: url("https://static1.squarespace.com/static/52dc4077e4b021f2d9370ec5/55f4d431e4b079c541ce8e25/586db0b946c3c40a1c5a2ba3/1513943946536/0137_On_the_other_hands_web2560.jpg?format=2500w");
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax h1
+    {
+        font-family: JosefinSlab-Regular;
+        position: relative;
+        top: 1.5em;
+        font-size: 100px;
+        color: white;
+    }
+    @media (max-width: 900px) {
+    .parallax h1 {font-size: 60px; top: 2.2em;}
+    .parallax{height: 350px;}
+    .site-navigation a{padding: 5px;}
+    p{font-size:15px;}
+    }
+
+    @media (max-width: 400px) {
+        .parallax{height: 250px;}
+        .parallax h1 {font-size: 40px; top: 2.5em;}
+        .site-navigation a{padding: 0;}
+        }
+    .gal {
+	
+	
+        -webkit-column-count: 3; /* Chrome, Safari, Opera */
+        -moz-column-count: 3; /* Firefox */
+        column-count: 3;
+       margin-top: 30px;
+          
+        
+        }	
+        .gal img{ width: 100%; 
+            max-height: 220px;
+            padding: 7px 0;
+        }
+    @media (max-width: 500px) {
+            
+            .gal {
+        
+        
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+          
+        
+        }
+    }
+
+    .gallery{background: rgb(24,24,24);}
+.social{text-align: center;}
+.social .fa{font-size:20px;padding: 5px; color: white;}
+.social .fa:hover{color:grey;}
+
+.thank{
+    width: 100%;
+    text-align: center;
+    display: block;
+    background-color: lightgray ;
+    padding: 10px;
+    color:white;
+    font-weight: bold;
+}
+
+.thank a {color:white;
+     text-decoration:none;
+  }
+  .thank a:hover{
+      color:grey;
+     text-decoration:none;
+  }
+
+  footer p{font-size:16px;}
+  blockquote{width:300px; margin:auto;}
+
+  /* --------------------------------------------------------------*/
+  

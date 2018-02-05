@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MvcDataViews.Models.Feedback>
+@{
+    ViewBag.Title = "Contact";
+}
+
+<section class="contact">
+    <div class="container">
+
+        <p class="thank">@Html.ActionLink("Create New", "Create")</p>
+        
+    </div>
+</section>
+<section>
+    <div class="container">
+        @foreach (var item in Model)
+        {
+            <blockquote>
+                <p>@Html.DisplayFor(modelItem => item.Comment)</p>
+                <cite>@Html.DisplayFor(modelItem => item.Name)<br /> @Html.DisplayFor(modelItem => item.Email)</cite>
+            </blockquote>
+        }
+        </div>
+</section>

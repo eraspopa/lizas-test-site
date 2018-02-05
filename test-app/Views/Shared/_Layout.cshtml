@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>@ViewBag.Title – Daehyun Kim</title>
+       
+    @Styles.Render("~/Content/Site.css")
+    @Styles.Render("~/Content/bootstrap.min.css")
+    @Styles.Render("~/Content/bootstrap.css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/jquery-3.2.1.js")
+    @Scripts.Render("~/Scripts/bootstrap.min.js")
+    
+</head>
+<body>
+    <div class="site">
+        <header class="site-header">
+
+            <nav class="site-navigation">
+                <ul>
+                    <li>@Html.ActionLink("Contact", "Index","Feedback")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Home", "Index","Home")</li>
+                </ul>
+            </nav>
+            <div class="parallax">
+                <h1>Daehyun Kim</h1>
+            </div><!-- .site-navigation -->
+        </header><!-- .site-header -->
+
+
+
+        <main class="content-wrapper">
+            @RenderBody()
+    </main>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="social">
+                    <a href="https://www.facebook.com/daehyun.kim"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://ru.pinterest.com/pin/102245854017904870/?lp=true"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/explore/tags/moonassi/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+            </div>
+
+        </footer><!-- .site-footer -->
+        </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    
+
+    
+</body>
+</html>
+
+
